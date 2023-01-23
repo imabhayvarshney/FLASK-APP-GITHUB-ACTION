@@ -6,6 +6,7 @@ WORKDIR /webapp
 
 ENV PIP_NO_CACHE_DIR=1
 
+Run apt get update
 RUN pip install -r requirements.txt
 
 COPY webapp/* /webapp
